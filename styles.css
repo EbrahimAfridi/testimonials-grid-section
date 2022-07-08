@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #EDF2F8;
+    padding: 10px;
+}
+p{
+    opacity: 70%;
+}
+.testimonial-grid-con{
+    position: absolute;
+    right: 15%;
+    top: 0;
+}
+.userName{
+    opacity: 100%;
+    font-size: 0.9rem;
+}
+.testimonial-grid-container{
+    padding: 5% 2%;
+}
+.grid-item{
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.grid-item:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.testimonial-1{
+    color: #FFFFFFFF;;
+    background-color: #7541C8FF;
+    border-radius: 8px;
+    z-index: 0;
+    position: relative;
+}
+.quote{
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+}
+.testimonial-2{
+    color: #FFFFFFFF;
+    background-color: #48556AFF;
+}
+.testimonial-3,
+.testimonial-5{
+    background-color: #FFFFFFFF;
+    color: hsl(219, 29%, 14%);
+}
+.testimonial-4{
+    color: #FFFFFFFF;
+    background-color: #19212EFF;
+}
+.HEADER img{
+    border-radius: 50%;
+    border:2px solid #7541c8;
+    margin-right: 10px;
+}
+.HEADER{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+.grid-item h3{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media (min-width: 576px) {
+     .testimonial-grid-container,
+     .main-left,
+     .top,
+     .bottom{
+         display: flex;
+     }
+    .testimonial-grid-container{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .main-left{
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+     .top,
+     .bottom{
+         flex-basis: 50%;
+    }
+    .testimonial-5{
+        flex-basis: 20%;
+    }
+    .testimonial-1,
+    .testimonial-4{
+        flex-basis: 65%;
+    }
+    .testimonial-2,
+    .testimonial-3{
+        flex-basis: 35%;
+    }
+    .main-left .grid-item{
+        margin-right: 15px;
+    }
+}
